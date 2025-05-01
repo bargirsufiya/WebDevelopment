@@ -1,0 +1,80 @@
+/*1.Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Element selector */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+/* 3. Class selector */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 4. ID selector */
+#special-para {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* 5. Group selector */
+h1, p {
+  margin-bottom: 15px;
+}
+
+/* 6. Descendant selector */
+div p span {
+  color: #2980b9;
+  font-style: italic;
+}
+
+/* 7. Child selector */
+ul > li {
+  list-style: square;
+  margin-left: 20px;
+  color: #2c3e50;
+}
+
+/* 8. Adjacent sibling selector */
+h2 + p {
+  background-color: #dff9fb;
+  padding: 10px;
+  border-left: 5px solid #3498db;
+}
+
+/* 9. Attribute selector */
+input[type="text"] {
+  border: 2px solid #27ae60;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+/* 10. Pseudo-class selector */
+a:hover {
+  color: white;
+  background-color: #e67e22;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* 11. Pseudo-element selector */
+p::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8e44ad;
+}
+
+p::after {
+  content: " ✔";
+  color: green;
+}
